@@ -16,6 +16,9 @@ class AudioBuffer:
     def addSamples(self, new_samples):
         self.buffer.extend(new_samples)
 
+    def getSampleWindow(self):
+        pass
+
  
 if __name__ == "__main__":
 

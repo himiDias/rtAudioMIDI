@@ -2,12 +2,15 @@ from collections import deque
 
 
 class AudioBuffer:
-    def __init__(self,max_size : int):
+    # max_size  : defines the number of samples the buffer can hold before circulating back
+    # window_size : defines the number of samples to be removed from the buffer for processing
+    def __init__(self,max_size : int, window_size : int):
         self.buffer = deque(maxlen=max_size)
+        self.window_size = window_size
     
     def addSamples(self, new_samples):
         self.buffer.extend(new_samples)
 
     def getSampleWindow(self):
-        print("PLACEHOLDER : Get samples from buffer")
+        
         pass

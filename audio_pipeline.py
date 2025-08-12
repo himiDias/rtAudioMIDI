@@ -13,7 +13,7 @@ def audio_proccesing(stream_buffer : AudioBuffer, stop_event):
 
 if __name__ == "__main__":
 
-    stream_buffer = AudioBuffer.AudioBuffer(max_size=1024)
+    stream_buffer = AudioBuffer.AudioBuffer(max_size=1024, window_size= 256)
     
     stop_event = threading.Event()
 

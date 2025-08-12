@@ -1,5 +1,7 @@
 import numpy as np
 import sounddevice as sd
+import threading
+
 import AudioBuffer
 
 def makeAudioCallback(audio_buffer):
@@ -13,7 +15,7 @@ def makeAudioCallback(audio_buffer):
 
 
 #same as main
-def startCapture(stream_buffer : AudioBuffer):
+def startCapture(stream_buffer : AudioBuffer, stop_event : threading.Event):
     # Check devices
     print(sd.default.device)
 
@@ -38,12 +40,16 @@ def startCapture(stream_buffer : AudioBuffer):
     print("Audio Stream Started")
     stream.start()
 
-    sd.sleep(5000)
-
+    while not stop_event.is_set():
+        pass
     stream.stop()
-    print("Audio Stream Ended")
 
-"""
+
+
+
+
+
+# SUB_COMPONENT TESTING ===========================
 if __name__ == "__main__":
 
     # Check devices
@@ -74,4 +80,3 @@ if __name__ == "__main__":
 
     stream.stop()
     print("Audio Stream Ended")
-"""

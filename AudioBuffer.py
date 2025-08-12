@@ -9,4 +9,5 @@ class AudioBuffer:
         self.buffer.extend(new_samples)
 
     def getSampleWindow(self):
+        print("PLACEHOLDER : Get samples from buffer")
         pass

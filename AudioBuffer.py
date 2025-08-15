@@ -1,4 +1,5 @@
 from collections import deque
+import numpy as np
 
 
 class AudioBuffer:
@@ -12,5 +13,16 @@ class AudioBuffer:
         self.buffer.extend(new_samples)
 
     def getSampleWindow(self):
+        return_samples = []
+        if (not self.isEmpty()):
+            for i in range(self.window_size):
+                return_samples.append(self.buffer.popleft())
         
-        pass
+        return_samples = np.array(return_samples)
+        return return_samples
+    
+    def isEmpty(self):
+        if len(self.buffer) == 0:
+            return True
+        
+        return False

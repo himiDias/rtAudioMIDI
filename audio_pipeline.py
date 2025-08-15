@@ -8,7 +8,10 @@ import AudioBuffer
 
 def audio_proccesing(stream_buffer : AudioBuffer, stop_event):
     while not stop_event.is_set():
-        stream_buffer.getSampleWindow()
+        x =stream_buffer.getSampleWindow()
+        if x.size >0:
+            print(np.sqrt(np.mean(x**2)))
+        
      
 
 if __name__ == "__main__":

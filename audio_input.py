@@ -8,7 +8,7 @@ def makeAudioCallback(audio_buffer):
     def audioCallback(indata , frames , time, status):
         global audio_chunk
         audio_chunk = indata[:,0]
-        print(np.sqrt(np.mean(audio_chunk**2)))
+        #print(np.sqrt(np.mean(audio_chunk**2)))
         audio_buffer.addSamples(audio_chunk)
     return audioCallback
 
@@ -43,6 +43,7 @@ def startCapture(stream_buffer : AudioBuffer, stop_event : threading.Event):
     while not stop_event.is_set():
         pass
     stream.stop()
+    print("Audio Stream stopped")
 
 
 

@@ -2,15 +2,26 @@ import numpy as np
 import sounddevice as sd
 import threading
 import time
+import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation
+from itertools import count
+import random
+
+
 import audio_input
 import AudioBuffer
 
 
-def audio_proccesing(stream_buffer : AudioBuffer, stop_event):
-    while not stop_event.is_set():
-        x =stream_buffer.getSampleWindow()
-        if x.size >0:
-            print(np.sqrt(np.mean(x**2)))
+x_vals = []
+y_vals = []
+
+index = count()
+
+def audio_proccesing(frame,stream_buffer : AudioBuffer):
+    amplitudes =stream_buffer.getSampleWindow()
+    if amplitudes.size >0:
+        pass
+        plt.plot(amplitudes)
         
      
 
@@ -22,15 +33,17 @@ if __name__ == "__main__":
 
     IOThread = threading.Thread(target=audio_input.startCapture,args=(stream_buffer, stop_event))
 
-    ProcessorThread = threading.Thread(target=audio_proccesing, args=(stream_buffer, stop_event))
+    #ProcessorThread = threading.Thread(target=audio_proccesing, args=(stream_buffer, stop_event))
 
     IOThread.start()
 
-    ProcessorThread.start()
+    ani = FuncAnimation(plt.gcf(),audio_proccesing,fargs=(stream_buffer,), interval=1000)
 
-    time.sleep(5)
+    plt.tight_layout()
+    plt.show()
+    #ProcessorThread.start()
     stop_event.set()
 
     IOThread.join()
 
-    ProcessorThread.join()
+    #ProcessorThread.join()

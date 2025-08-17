@@ -48,8 +48,8 @@ if __name__ == "__main__":
     # so this ensures samples are processed at the same rate as samples entered into the buffer
     timer.start(22)
 
-    sys.exit(app.exec_())
-    
+    app.exec_()
+
     stop_event.set()
 
     IOThread.join()

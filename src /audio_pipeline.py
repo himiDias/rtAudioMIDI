@@ -12,6 +12,7 @@ import pyqtgraph as pg
 
 
 import audio_input
+import pitch_detection
 import AudioBuffer
 
 
@@ -20,19 +21,27 @@ import AudioBuffer
 def audio_proccesing(stream_buffer : AudioBuffer):
     amplitudes =stream_buffer.getSampleWindow()
     if amplitudes.size >0:
+        #pitch_detection.detectFrequenctYIN(amplitudes,samplerate=44100,block_size=256)
         values_waveform.setData(amplitudes)
-        
+        pitch_detection_buffer.addSamples(amplitudes)
      
 
 if __name__ == "__main__":
 
     stream_buffer = AudioBuffer.AudioBuffer(max_size=1024, window_size= 256)
+
+    #seperate buffer for pitch detection, to allow for larger window size and run on seperate thread
+    pitch_detection_buffer = AudioBuffer.AudioBuffer(max_size=4096,window_size= 1024)
     
     stop_event = threading.Event()
 
     IOThread = threading.Thread(target=audio_input.startCapture,args=(stream_buffer, stop_event))
 
+    PitchPredThread = threading.Thread(target=pitch_detection.startDetection, args=(pitch_detection_buffer, stop_event))
+
     IOThread.start()
+
+    PitchPredThread.start()
 
     
     app = QApplication(sys.argv)
@@ -53,3 +62,5 @@ if __name__ == "__main__":
     stop_event.set()
 
     IOThread.join()
+
+    PitchPredThread.join()

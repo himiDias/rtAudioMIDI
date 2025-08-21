@@ -26,3 +26,6 @@ class AudioBuffer:
             return True
         
         return False
+    
+    def getSize(self):
+        return len(self.buffer)

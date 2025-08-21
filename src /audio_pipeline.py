@@ -31,7 +31,7 @@ if __name__ == "__main__":
     stream_buffer = AudioBuffer.AudioBuffer(max_size=1024, window_size= 256)
 
     #seperate buffer for pitch detection, to allow for larger window size and run on seperate thread
-    pitch_detection_buffer = AudioBuffer.AudioBuffer(max_size=4096,window_size= 1024)
+    pitch_detection_buffer = AudioBuffer.AudioBuffer(max_size=8192,window_size= 2048)
     
     stop_event = threading.Event()
 

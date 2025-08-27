@@ -3,5 +3,4 @@ numpy==2.3.2
 matplotlib==3.10.5
 PyQt5==5.15.11
 pyqtgraph==0.13.7
-librosa==0.11.0
 aubio==0.4.9

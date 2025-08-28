@@ -18,13 +18,7 @@ def detectFrequenctYIN(audio_block, samplerate, block_size):
     print("Frequency :",f0[0], "| Silence :",voiced_flags[0], "| Silence_probability :",voiced_probs[0], flush=True)
 """
 
-def detectPitch(audio_block,samplerate,block_size):
-    detector = aubio.pitch(method="yin",buf_size=block_size,hop_size=block_size,samplerate=samplerate)
-
-    detector.set_unit("Hz")
-    detector.set_silence(-40)
-    detector.set_tolerance(0.5)
-
+def detectPitch(audio_block,detector):
     frequency = detector(audio_block)[0]
 
     return frequency
@@ -33,17 +27,29 @@ def startDetection(audio_buffer : AudioBuffer, stop_event : threading.Event):
     block_size = 2048
     sample_rate = 44100
 
-    history_five = []
+    detector_onset = aubio.onset(buf_size = block_size, hop_size = block_size,samplerate = sample_rate)
+    # adjust as needed, or allow change
+    # silence set high due to open mic, and background noise
+    detector_onset.set_silence(-50)
+    detector_onset.set_threshold(0.5)
+    detector_onset.set_minioi_ms(50)
+
+    detector_pitch = aubio.pitch(method="yin",buf_size=block_size,hop_size=block_size,samplerate=sample_rate)
+
+    detector_pitch.set_unit("Hz")
+    detector_pitch.set_silence(-40)
+    detector_pitch.set_tolerance(0.5)
 
     while not stop_event.is_set():
         if audio_buffer.getSize() > block_size:
             samples = audio_buffer.getSampleWindow()
-            pitch = detectPitch(samples,samplerate=sample_rate,block_size=block_size)
+            pitch = detectPitch(samples,detector_pitch)
+            """
             if (len(history_five) == 3):
                 hist_five_np = np.array(history_five)
                 #print("Frequency | ",np.average(hist_five_np))
-                history_five = []
-            history_five.append(pitch)
+                history_five = []"""
+            #history_five.append(pitch)
 
             print(pitch)
 

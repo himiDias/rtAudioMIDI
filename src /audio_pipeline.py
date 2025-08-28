@@ -13,6 +13,8 @@ import pyqtgraph as pg
 
 import audio_input
 import pitch_detection
+#temp, merge pithc and onset 
+import onset_detection
 import AudioBuffer
 
 
@@ -37,8 +39,8 @@ if __name__ == "__main__":
 
     IOThread = threading.Thread(target=audio_input.startCapture,args=(stream_buffer, stop_event))
 
+    #PitchPredThread = threading.Thread(target=pitch_detection.startDetection, args=(pitch_detection_buffer, stop_event))
     PitchPredThread = threading.Thread(target=pitch_detection.startDetection, args=(pitch_detection_buffer, stop_event))
-
     IOThread.start()
 
     PitchPredThread.start()

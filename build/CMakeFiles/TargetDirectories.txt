@@ -1,0 +1,3 @@
+/home/himidias/Documents/PP/Real-time-audio-to-MIDI/rtAudioMIDI/build/CMakeFiles/main.dir
+/home/himidias/Documents/PP/Real-time-audio-to-MIDI/rtAudioMIDI/build/CMakeFiles/edit_cache.dir
+/home/himidias/Documents/PP/Real-time-audio-to-MIDI/rtAudioMIDI/build/CMakeFiles/rebuild_cache.dir

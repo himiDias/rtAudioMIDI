@@ -11,7 +11,7 @@ namespace rtaudio2midi{
 
     class AudioCapture{
         public:
-            AudioCapture(unsigned int sampleRate, unsigned int bufferFrames, unsigned int channels);
+            AudioCapture(unsigned int sampleRate, unsigned int blockSize, unsigned int channels);
 
             ~AudioCapture();
 
@@ -24,14 +24,14 @@ namespace rtaudio2midi{
             RtAudio::StreamParameters inputParams;
 
             unsigned int sampleRate;
-            unsigned int bufferFrames;
+            unsigned int blockSize;
             unsigned int channels;
 
             // State
             std::atomic<bool> running{false};
 
             // Audio buffer
-            RingBuffer<float> ringBuffer;
+            CircularBuffer<float> ringBuffer;
 
             // Callback
             static int audioCallback(
@@ -44,10 +44,6 @@ namespace rtaudio2midi{
             );
 
             int processInput(void* inputBuffer, unsigned int nFrames);
-
-            static int audioCallback(void *outputBuffer, void *inputBuffer, 
-                              unsigned int nBufferFrames, double streamTime, 
-                              RtAudioStreamStatus status, void *userData);
 
     };
 }

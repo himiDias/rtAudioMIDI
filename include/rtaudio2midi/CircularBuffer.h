@@ -17,19 +17,37 @@ namespace rtaudio2midi
         explicit CircularBuffer(size_t size)
             : buffer_(new T[size], capacity_[size], head_(0), tail_(0));
 
-        bool put(T item)
-        {
+
+        bool putChunk(const T* data, size_t count) {
             size_t head = head_.load(std::memory_order_relaxed);
-            size_t next_head = (head + 1) % capacity_;
+            size_t tail = tail_.load(std::memory_order_acquire);
 
-            if (next_head == tail_.load(std::memory_order_acquire))
-            {
-                return false;
+             
+            size_t available = (head >= tail) ? (capacity_ - (head - tail) - 1) : (tail - head - 1);
+            if (count > available) return false; 
+
+            
+            size_t spaceToEnd = capacity_ - head;
+            if (count <= spaceToEnd) {
+                std::copy(data, data + count, &buffer_[head]);
+            } else {
+                std::copy(data, data + spaceToEnd, &buffer_[head]);
+                std::copy(data + spaceToEnd, data + count, &buffer_[0]);
             }
+            
 
-            buffer_[head] = item;
-            head_.store(next_head, std::memory_order_release);
+            head_.store((head + count) % capacity_, std::memory_order_release);
             return true;
+        }
+
+        
+        size_t getChunk(T* outputArray, size_t numFrames) {
+            size_t readCount = 0;
+            while (readCount < numFrames) {
+                if (!get(outputArray[readCount])) break;
+                readCount++;
+            }
+            return readCount;
         }
 
         bool get(T &item)

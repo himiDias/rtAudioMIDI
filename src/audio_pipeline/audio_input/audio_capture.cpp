@@ -83,6 +83,10 @@ namespace rtaudio2midi
 
     bool AudioCapture::isRunning() { return running; }
 
+    size_t AudioCapture::getNextChunk(float *output_arr, size_t num_frames){
+        return ring_buffer.getChunk(output_arr,num_frames);
+    }
+
     int AudioCapture::audioCallback(void *output_buffer, void *input_buffer, unsigned int n_frames, double stream_time, RtAudioStreamStatus status, void *user_data)
     {
         if (status == RTAUDIO_INPUT_OVERFLOW)

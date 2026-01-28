@@ -144,6 +144,9 @@ main: CMakeFiles/main.dir/src/audio_pipeline/pitch_detection/pitch_detection.cpp
 main: CMakeFiles/main.dir/src/main.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/compiler_depend.ts
+main: /usr/lib64/libsfml-graphics.so.2.6.2
+main: /usr/lib64/libsfml-window.so.2.6.2
+main: /usr/lib64/libsfml-system.so.2.6.2
 main: CMakeFiles/main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/himidias/Documents/PP/Real-time-audio-to-MIDI/rtAudioMIDI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)

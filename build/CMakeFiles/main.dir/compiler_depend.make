@@ -589,6 +589,83 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/himidias/Documents/PP/Real-time-audio-
   /home/himidias/Documents/PP/Real-time-audio-to-MIDI/rtAudioMIDI/include/RtAudio.h \
   /home/himidias/Documents/PP/Real-time-audio-to-MIDI/rtAudioMIDI/include/rtaudio2midi/CircularBuffer.h \
   /home/himidias/Documents/PP/Real-time-audio-to-MIDI/rtAudioMIDI/include/rtaudio2midi/audio_capture.h \
+  /home/himidias/Documents/PP/Real-time-audio-to-MIDI/rtAudioMIDI/include/rtaudio2midi/waveform_visualiser.h \
+  /usr/include/SFML/Config.hpp \
+  /usr/include/SFML/Graphics.hpp \
+  /usr/include/SFML/Graphics/BlendMode.hpp \
+  /usr/include/SFML/Graphics/CircleShape.hpp \
+  /usr/include/SFML/Graphics/Color.hpp \
+  /usr/include/SFML/Graphics/ConvexShape.hpp \
+  /usr/include/SFML/Graphics/Drawable.hpp \
+  /usr/include/SFML/Graphics/Export.hpp \
+  /usr/include/SFML/Graphics/Font.hpp \
+  /usr/include/SFML/Graphics/Glsl.hpp \
+  /usr/include/SFML/Graphics/Glsl.inl \
+  /usr/include/SFML/Graphics/Glyph.hpp \
+  /usr/include/SFML/Graphics/Image.hpp \
+  /usr/include/SFML/Graphics/PrimitiveType.hpp \
+  /usr/include/SFML/Graphics/Rect.hpp \
+  /usr/include/SFML/Graphics/Rect.inl \
+  /usr/include/SFML/Graphics/RectangleShape.hpp \
+  /usr/include/SFML/Graphics/RenderStates.hpp \
+  /usr/include/SFML/Graphics/RenderTarget.hpp \
+  /usr/include/SFML/Graphics/RenderTexture.hpp \
+  /usr/include/SFML/Graphics/RenderWindow.hpp \
+  /usr/include/SFML/Graphics/Shader.hpp \
+  /usr/include/SFML/Graphics/Shape.hpp \
+  /usr/include/SFML/Graphics/Sprite.hpp \
+  /usr/include/SFML/Graphics/Text.hpp \
+  /usr/include/SFML/Graphics/Texture.hpp \
+  /usr/include/SFML/Graphics/Transform.hpp \
+  /usr/include/SFML/Graphics/Transformable.hpp \
+  /usr/include/SFML/Graphics/Vertex.hpp \
+  /usr/include/SFML/Graphics/VertexArray.hpp \
+  /usr/include/SFML/Graphics/VertexBuffer.hpp \
+  /usr/include/SFML/Graphics/View.hpp \
+  /usr/include/SFML/System.hpp \
+  /usr/include/SFML/System/Clock.hpp \
+  /usr/include/SFML/System/Err.hpp \
+  /usr/include/SFML/System/Export.hpp \
+  /usr/include/SFML/System/FileInputStream.hpp \
+  /usr/include/SFML/System/InputStream.hpp \
+  /usr/include/SFML/System/Lock.hpp \
+  /usr/include/SFML/System/MemoryInputStream.hpp \
+  /usr/include/SFML/System/Mutex.hpp \
+  /usr/include/SFML/System/NonCopyable.hpp \
+  /usr/include/SFML/System/Sleep.hpp \
+  /usr/include/SFML/System/String.hpp \
+  /usr/include/SFML/System/String.inl \
+  /usr/include/SFML/System/Thread.hpp \
+  /usr/include/SFML/System/Thread.inl \
+  /usr/include/SFML/System/ThreadLocal.hpp \
+  /usr/include/SFML/System/ThreadLocalPtr.hpp \
+  /usr/include/SFML/System/ThreadLocalPtr.inl \
+  /usr/include/SFML/System/Time.hpp \
+  /usr/include/SFML/System/Utf.hpp \
+  /usr/include/SFML/System/Utf.inl \
+  /usr/include/SFML/System/Vector2.hpp \
+  /usr/include/SFML/System/Vector2.inl \
+  /usr/include/SFML/System/Vector3.hpp \
+  /usr/include/SFML/System/Vector3.inl \
+  /usr/include/SFML/Window.hpp \
+  /usr/include/SFML/Window/Clipboard.hpp \
+  /usr/include/SFML/Window/Context.hpp \
+  /usr/include/SFML/Window/ContextSettings.hpp \
+  /usr/include/SFML/Window/Cursor.hpp \
+  /usr/include/SFML/Window/Event.hpp \
+  /usr/include/SFML/Window/Export.hpp \
+  /usr/include/SFML/Window/GlResource.hpp \
+  /usr/include/SFML/Window/Joystick.hpp \
+  /usr/include/SFML/Window/Keyboard.hpp \
+  /usr/include/SFML/Window/Mouse.hpp \
+  /usr/include/SFML/Window/Sensor.hpp \
+  /usr/include/SFML/Window/Touch.hpp \
+  /usr/include/SFML/Window/VideoMode.hpp \
+  /usr/include/SFML/Window/Vulkan.hpp \
+  /usr/include/SFML/Window/Window.hpp \
+  /usr/include/SFML/Window/WindowBase.hpp \
+  /usr/include/SFML/Window/WindowHandle.hpp \
+  /usr/include/SFML/Window/WindowStyle.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -662,11 +739,13 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/himidias/Documents/PP/Real-time-audio-
   /usr/include/bits/wchar.h \
   /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/c++/15/algorithm \
   /usr/include/c++/15/array \
   /usr/include/c++/15/atomic \
   /usr/include/c++/15/backward/auto_ptr.h \
   /usr/include/c++/15/backward/binders.h \
   /usr/include/c++/15/bit \
+  /usr/include/c++/15/bits/algorithmfwd.h \
   /usr/include/c++/15/bits/align.h \
   /usr/include/c++/15/bits/alloc_traits.h \
   /usr/include/c++/15/bits/allocated_ptr.h \
@@ -679,6 +758,7 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/himidias/Documents/PP/Real-time-audio-
   /usr/include/c++/15/bits/basic_string.tcc \
   /usr/include/c++/15/bits/char_traits.h \
   /usr/include/c++/15/bits/charconv.h \
+  /usr/include/c++/15/bits/codecvt.h \
   /usr/include/c++/15/bits/concept_check.h \
   /usr/include/c++/15/bits/cpp_type_traits.h \
   /usr/include/c++/15/bits/cxxabi_forced.h \
@@ -698,8 +778,11 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/himidias/Documents/PP/Real-time-audio-
   /usr/include/c++/15/bits/istream.tcc \
   /usr/include/c++/15/bits/locale_classes.h \
   /usr/include/c++/15/bits/locale_classes.tcc \
+  /usr/include/c++/15/bits/locale_conv.h \
   /usr/include/c++/15/bits/locale_facets.h \
   /usr/include/c++/15/bits/locale_facets.tcc \
+  /usr/include/c++/15/bits/locale_facets_nonio.h \
+  /usr/include/c++/15/bits/locale_facets_nonio.tcc \
   /usr/include/c++/15/bits/localefwd.h \
   /usr/include/c++/15/bits/memory_resource.h \
   /usr/include/c++/15/bits/memoryfwd.h \
@@ -722,22 +805,29 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/himidias/Documents/PP/Real-time-audio-
   /usr/include/c++/15/bits/sstream.tcc \
   /usr/include/c++/15/bits/std_abs.h \
   /usr/include/c++/15/bits/std_function.h \
+  /usr/include/c++/15/bits/stl_algo.h \
   /usr/include/c++/15/bits/stl_algobase.h \
   /usr/include/c++/15/bits/stl_bvector.h \
   /usr/include/c++/15/bits/stl_construct.h \
   /usr/include/c++/15/bits/stl_function.h \
+  /usr/include/c++/15/bits/stl_heap.h \
   /usr/include/c++/15/bits/stl_iterator.h \
   /usr/include/c++/15/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/15/bits/stl_iterator_base_types.h \
+  /usr/include/c++/15/bits/stl_map.h \
+  /usr/include/c++/15/bits/stl_multimap.h \
   /usr/include/c++/15/bits/stl_pair.h \
   /usr/include/c++/15/bits/stl_raw_storage_iter.h \
   /usr/include/c++/15/bits/stl_tempbuf.h \
+  /usr/include/c++/15/bits/stl_tree.h \
   /usr/include/c++/15/bits/stl_uninitialized.h \
   /usr/include/c++/15/bits/stl_vector.h \
+  /usr/include/c++/15/bits/stream_iterator.h \
   /usr/include/c++/15/bits/streambuf.tcc \
   /usr/include/c++/15/bits/streambuf_iterator.h \
   /usr/include/c++/15/bits/string_view.tcc \
   /usr/include/c++/15/bits/stringfwd.h \
+  /usr/include/c++/15/bits/uniform_int_dist.h \
   /usr/include/c++/15/bits/unique_ptr.h \
   /usr/include/c++/15/bits/unordered_map.h \
   /usr/include/c++/15/bits/uses_allocator.h \
@@ -754,6 +844,8 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/himidias/Documents/PP/Real-time-audio-
   /usr/include/c++/15/cstdint \
   /usr/include/c++/15/cstdio \
   /usr/include/c++/15/cstdlib \
+  /usr/include/c++/15/cstring \
+  /usr/include/c++/15/ctime \
   /usr/include/c++/15/cwchar \
   /usr/include/c++/15/cwctype \
   /usr/include/c++/15/debug/assertions.h \
@@ -772,10 +864,14 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/himidias/Documents/PP/Real-time-audio-
   /usr/include/c++/15/iosfwd \
   /usr/include/c++/15/iostream \
   /usr/include/c++/15/istream \
+  /usr/include/c++/15/iterator \
+  /usr/include/c++/15/locale \
+  /usr/include/c++/15/map \
   /usr/include/c++/15/memory \
   /usr/include/c++/15/new \
   /usr/include/c++/15/ostream \
   /usr/include/c++/15/pstl/execution_defs.h \
+  /usr/include/c++/15/pstl/glue_algorithm_defs.h \
   /usr/include/c++/15/pstl/glue_memory_defs.h \
   /usr/include/c++/15/pstl/pstl_config.h \
   /usr/include/c++/15/sstream \
@@ -800,7 +896,9 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/himidias/Documents/PP/Real-time-audio-
   /usr/include/c++/15/x86_64-redhat-linux/bits/error_constants.h \
   /usr/include/c++/15/x86_64-redhat-linux/bits/gthr-default.h \
   /usr/include/c++/15/x86_64-redhat-linux/bits/gthr.h \
+  /usr/include/c++/15/x86_64-redhat-linux/bits/messages_members.h \
   /usr/include/c++/15/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/c++/15/x86_64-redhat-linux/bits/time_members.h \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -808,6 +906,7 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/himidias/Documents/PP/Real-time-audio-
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
+  /usr/include/libintl.h \
   /usr/include/linux/errno.h \
   /usr/include/linux/posix_types.h \
   /usr/include/linux/sched/types.h \
@@ -820,6 +919,8 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/himidias/Documents/PP/Real-time-audio-
   /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   /usr/include/sys/cdefs.h \
   /usr/include/sys/select.h \
   /usr/include/sys/single_threaded.h \
@@ -848,7 +949,30 @@ main: /lib64/ld-linux-x86-64.so.2 \
   /usr/lib/gcc/x86_64-redhat-linux/15/libgcc.a \
   /usr/lib/gcc/x86_64-redhat-linux/15/libgcc_s.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so \
+  /usr/lib64/libX11.so.6 \
+  /usr/lib64/libXau.so.6 \
+  /usr/lib64/libXcursor.so.1 \
+  /usr/lib64/libXext.so.6 \
+  /usr/lib64/libXfixes.so.3 \
+  /usr/lib64/libXrandr.so.2 \
+  /usr/lib64/libXrender.so.1 \
+  /usr/lib64/libbrotlicommon.so.1 \
+  /usr/lib64/libbrotlidec.so.1 \
+  /usr/lib64/libbz2.so.1 \
   /usr/lib64/libc_nonshared.a \
+  /usr/lib64/libcap.so.2 \
+  /usr/lib64/libfreetype.so.6 \
+  /usr/lib64/libglib-2.0.so.0 \
+  /usr/lib64/libgraphite2.so.3 \
+  /usr/lib64/libharfbuzz.so.0 \
+  /usr/lib64/libpcre2-8.so.0 \
+  /usr/lib64/libpng16.so.16 \
+  /usr/lib64/libsfml-graphics.so.2.6.2 \
+  /usr/lib64/libsfml-system.so.2.6.2 \
+  /usr/lib64/libsfml-window.so.2.6.2 \
+  /usr/lib64/libudev.so.1 \
+  /usr/lib64/libxcb.so.1 \
+  /usr/lib64/libz.so.1 \
   CMakeFiles/main.dir/src/audio_pipeline/RtAudio.cpp.o \
   CMakeFiles/main.dir/src/audio_pipeline/audio_input/audio_capture.cpp.o \
   CMakeFiles/main.dir/src/audio_pipeline/pitch_detection/pitch_detection.cpp.o \
@@ -859,13 +983,35 @@ CMakeFiles/main.dir/src/audio_pipeline/audio_input/audio_capture.cpp.o:
 
 CMakeFiles/main.dir/src/audio_pipeline/RtAudio.cpp.o:
 
+/usr/lib64/libz.so.1:
+
+/usr/lib64/libxcb.so.1:
+
+/usr/lib64/libudev.so.1:
+
+/usr/lib64/libsfml-system.so.2.6.2:
+
+/usr/lib64/libharfbuzz.so.0:
+
+/usr/lib64/libgraphite2.so.3:
+
+/usr/lib64/libglib-2.0.so.0:
+
+/usr/lib64/libfreetype.so.6:
+
+/usr/lib64/libcap.so.2:
+
+/usr/lib64/libbz2.so.1:
+
+/usr/lib64/libXrandr.so.2:
+
+/usr/lib64/libXext.so.6:
+
 /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so:
 
 /usr/lib/gcc/x86_64-redhat-linux/15/libgcc.a:
 
 /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o:
-
-/usr/lib64/libpthread.a:
 
 /usr/lib64/libm.so:
 
@@ -877,7 +1023,95 @@ CMakeFiles/main.dir/src/audio_pipeline/RtAudio.cpp.o:
 
 /lib64/libc.so.6:
 
+/usr/lib64/libXau.so.6:
+
 /lib64/ld-linux-x86-64.so.2:
+
+/usr/include/c++/15/map:
+
+/usr/include/c++/15/iterator:
+
+/usr/include/SFML/Window/WindowStyle.hpp:
+
+/usr/include/SFML/Window/WindowHandle.hpp:
+
+/usr/include/SFML/Window/Vulkan.hpp:
+
+/usr/include/SFML/Window/Touch.hpp:
+
+/usr/include/SFML/Window/Mouse.hpp:
+
+/usr/lib64/libpthread.a:
+
+/usr/include/SFML/Window/Joystick.hpp:
+
+/usr/include/SFML/Window/GlResource.hpp:
+
+/usr/include/SFML/Window/Cursor.hpp:
+
+/usr/include/SFML/Window/Clipboard.hpp:
+
+/usr/include/SFML/System/Vector3.inl:
+
+/usr/include/SFML/System/Vector2.hpp:
+
+/usr/include/SFML/System/Utf.hpp:
+
+/usr/include/SFML/System/Time.hpp:
+
+/usr/include/SFML/System/ThreadLocalPtr.inl:
+
+/usr/include/SFML/System/ThreadLocalPtr.hpp:
+
+/usr/include/SFML/System/ThreadLocal.hpp:
+
+/usr/lib64/libXrender.so.1:
+
+/usr/include/SFML/Window/Event.hpp:
+
+/usr/include/SFML/System/String.inl:
+
+/usr/include/SFML/System/Mutex.hpp:
+
+/usr/include/SFML/System/Lock.hpp:
+
+/usr/include/SFML/System/InputStream.hpp:
+
+/usr/include/SFML/System/Export.hpp:
+
+/usr/include/SFML/System/Err.hpp:
+
+/usr/include/SFML/Graphics/VertexArray.hpp:
+
+/usr/include/SFML/Graphics/Vertex.hpp:
+
+/usr/include/SFML/Graphics/Sprite.hpp:
+
+/usr/include/SFML/Graphics/Shape.hpp:
+
+/usr/include/SFML/Graphics/Shader.hpp:
+
+/usr/include/SFML/Graphics/RenderTarget.hpp:
+
+/usr/include/SFML/Graphics/RenderStates.hpp:
+
+/usr/include/SFML/Graphics/RectangleShape.hpp:
+
+/usr/include/SFML/Graphics/Rect.inl:
+
+/usr/include/SFML/Graphics/Rect.hpp:
+
+/usr/include/SFML/Graphics/PrimitiveType.hpp:
+
+/usr/include/SFML/Graphics/Export.hpp:
+
+/usr/include/SFML/Graphics/ConvexShape.hpp:
+
+/usr/include/SFML/Config.hpp:
+
+/usr/include/SFML/System/Vector3.hpp:
+
+/home/himidias/Documents/PP/Real-time-audio-to-MIDI/rtAudioMIDI/include/rtaudio2midi/waveform_visualiser.h:
 
 /home/himidias/Documents/PP/Real-time-audio-to-MIDI/rtAudioMIDI/src/audio_pipeline/pitch_detection/pitch_detection.cpp:
 
@@ -907,13 +1141,19 @@ CMakeFiles/main.dir/src/audio_pipeline/RtAudio.cpp.o:
 
 /usr/include/stdc-predef.h:
 
+/usr/lib64/libbrotlicommon.so.1:
+
 /usr/include/pthread.h:
 
 /usr/include/poll.h:
 
+/usr/include/SFML/Graphics/Transform.hpp:
+
 /usr/include/math.h:
 
 /usr/include/locale.h:
+
+/usr/include/SFML/Window/Keyboard.hpp:
 
 /usr/include/linux/types.h:
 
@@ -957,9 +1197,15 @@ CMakeFiles/main.dir/src/audio_pipeline/RtAudio.cpp.o:
 
 /usr/include/c++/15/tr1/special_function_util.h:
 
+/usr/include/SFML/System.hpp:
+
+/usr/include/SFML/Graphics/Color.hpp:
+
 /usr/include/c++/15/x86_64-redhat-linux/bits/time_members.h:
 
 /usr/include/c++/15/tr1/riemann_zeta.tcc:
+
+/usr/include/SFML/Window/Export.hpp:
 
 /usr/include/c++/15/tr1/poly_hermite.tcc:
 
@@ -991,6 +1237,8 @@ CMakeFiles/main.dir/src/audio_pipeline/RtAudio.cpp.o:
 
 /usr/include/bits/wordsize.h:
 
+/usr/lib64/libpcre2-8.so.0:
+
 /usr/include/c++/15/bits/range_access.h:
 
 /usr/include/c++/15/string:
@@ -1001,6 +1249,8 @@ CMakeFiles/main.dir/src/audio_pipeline/RtAudio.cpp.o:
 
 CMakeFiles/main.dir/src/audio_pipeline/pitch_detection/pitch_detection.cpp.o:
 
+/usr/include/SFML/Window/Sensor.hpp:
+
 /usr/include/bits/types/struct_timespec.h:
 
 /usr/include/c++/15/vector:
@@ -1010,6 +1260,8 @@ CMakeFiles/main.dir/src/audio_pipeline/pitch_detection/pitch_detection.cpp.o:
 /usr/lib/gcc/x86_64-redhat-linux/15/include/stddef.h:
 
 /usr/include/c++/15/bits/localefwd.h:
+
+/usr/include/SFML/Window/ContextSettings.hpp:
 
 /usr/include/bits/waitflags.h:
 
@@ -1029,6 +1281,8 @@ CMakeFiles/main.dir/src/audio_pipeline/pitch_detection/pitch_detection.cpp.o:
 
 /usr/include/bits/types/locale_t.h:
 
+/usr/include/c++/15/bits/stl_map.h:
+
 /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h:
 
 /usr/include/linux/stddef.h:
@@ -1042,6 +1296,8 @@ CMakeFiles/main.dir/src/audio_pipeline/pitch_detection/pitch_detection.cpp.o:
 /usr/include/bits/types/__locale_t.h:
 
 /usr/include/bits/types/__fpos64_t.h:
+
+/usr/include/SFML/Graphics/Text.hpp:
 
 /usr/include/linux/posix_types.h:
 
@@ -1071,11 +1327,17 @@ CMakeFiles/main.dir/src/audio_pipeline/pitch_detection/pitch_detection.cpp.o:
 
 /usr/include/bits/stdio_lim.h:
 
+/usr/include/c++/15/bits/stream_iterator.h:
+
 /usr/include/bits/types/__mbstate_t.h:
 
 /usr/include/c++/15/bits/utility.h:
 
+/usr/include/SFML/System/Utf.inl:
+
 /usr/include/bits/setjmp.h:
+
+/usr/lib64/libXfixes.so.3:
 
 /usr/include/c++/15/bits/char_traits.h:
 
@@ -1091,7 +1353,11 @@ CMakeFiles/main.dir/src/audio_pipeline/pitch_detection/pitch_detection.cpp.o:
 
 /usr/include/bits/pthreadtypes-arch.h:
 
+/usr/include/SFML/Graphics/Glsl.hpp:
+
 /usr/include/bits/pthread_stack_min-dynamic.h:
+
+/usr/include/SFML/Graphics/VertexBuffer.hpp:
 
 /usr/include/bits/posix2_lim.h:
 
@@ -1107,11 +1373,15 @@ CMakeFiles/main.dir/src/audio_pipeline/pitch_detection/pitch_detection.cpp.o:
 
 /usr/include/c++/15/bits/version.h:
 
+/usr/include/SFML/System/NonCopyable.hpp:
+
 /usr/include/bits/mathcalls-narrow.h:
 
 /usr/include/c++/15/tr1/hypergeometric.tcc:
 
 /usr/include/bits/mathcalls-macros.h:
+
+/usr/lib64/libXcursor.so.1:
 
 /usr/include/alsa/seq.h:
 
@@ -1127,9 +1397,13 @@ CMakeFiles/main.dir/src/audio_pipeline/pitch_detection/pitch_detection.cpp.o:
 
 /usr/include/c++/15/bits/stl_function.h:
 
+/usr/include/SFML/Graphics/BlendMode.hpp:
+
 /usr/include/c++/15/cwchar:
 
 /usr/include/asm-generic/errno.h:
+
+/usr/include/SFML/System/MemoryInputStream.hpp:
 
 /usr/include/alsa/hwdep.h:
 
@@ -1137,13 +1411,19 @@ CMakeFiles/main.dir/src/audio_pipeline/pitch_detection/pitch_detection.cpp.o:
 
 /usr/include/bits/select.h:
 
+/usr/include/SFML/Graphics/RenderTexture.hpp:
+
 /usr/include/sys/cdefs.h:
 
 /usr/include/c++/15/debug/assertions.h:
 
+/usr/include/SFML/Window/WindowBase.hpp:
+
 /usr/include/asm-generic/int-ll64.h:
 
 /usr/include/alsa/ump_msg.h:
+
+/usr/include/SFML/Graphics/Texture.hpp:
 
 /usr/include/bits/posix_opt.h:
 
@@ -1156,6 +1436,8 @@ CMakeFiles/main.dir/src/audio_pipeline/pitch_detection/pitch_detection.cpp.o:
 /usr/include/alsa/conf.h:
 
 /usr/include/c++/15/bits/sstream.tcc:
+
+/usr/include/SFML/Graphics/Drawable.hpp:
 
 /usr/include/c++/15/type_traits:
 
@@ -1170,6 +1452,10 @@ CMakeFiles/main.dir/src/audio_pipeline/pitch_detection/pitch_detection.cpp.o:
 /usr/include/c++/15/bits/node_handle.h:
 
 /usr/include/c++/15/pstl/glue_memory_defs.h:
+
+/usr/lib64/libsfml-graphics.so.2.6.2:
+
+/usr/include/SFML/System/Clock.hpp:
 
 /usr/include/asm/types.h:
 
@@ -1189,6 +1475,8 @@ CMakeFiles/main.dir/src/audio_pipeline/pitch_detection/pitch_detection.cpp.o:
 
 /usr/include/alsa/control.h:
 
+/usr/include/SFML/System/String.hpp:
+
 /usr/include/libintl.h:
 
 /usr/include/bits/endianness.h:
@@ -1200,6 +1488,8 @@ CMakeFiles/main.dir/src/audio_pipeline/pitch_detection/pitch_detection.cpp.o:
 /usr/include/alloca.h:
 
 /usr/include/alsa/asoundef.h:
+
+/usr/lib64/libX11.so.6:
 
 /usr/include/bits/stdint-least.h:
 
@@ -1221,6 +1511,10 @@ CMakeFiles/main.dir/src/audio_pipeline/pitch_detection/pitch_detection.cpp.o:
 
 /usr/lib64/libasound.so:
 
+/usr/include/SFML/Window/VideoMode.hpp:
+
+/usr/include/SFML/Graphics/Font.hpp:
+
 /usr/include/assert.h:
 
 /usr/include/bits/stat.h:
@@ -1229,21 +1523,29 @@ CMakeFiles/main.dir/src/audio_pipeline/pitch_detection/pitch_detection.cpp.o:
 
 /usr/include/bits/uintn-identity.h:
 
+/usr/include/SFML/Graphics/Glsl.inl:
+
 /usr/include/bits/typesizes.h:
 
 /usr/include/alsa/ump.h:
 
 /usr/include/c++/15/bits/stl_algo.h:
 
+/usr/include/SFML/System/Sleep.hpp:
+
 /home/himidias/Documents/PP/Real-time-audio-to-MIDI/rtAudioMIDI/src/audio_pipeline/audio_input/audio_capture.cpp:
 
 /usr/include/asm/bitsperlong.h:
+
+/usr/include/SFML/Window/Context.hpp:
 
 /usr/include/asm/posix_types_64.h:
 
 /usr/include/bits/time.h:
 
 /usr/include/asm/posix_types.h:
+
+/usr/lib64/libpng16.so.16:
 
 /usr/include/c++/15/bits/alloc_traits.h:
 
@@ -1299,6 +1601,8 @@ CMakeFiles/main.dir/src/audio_pipeline/pitch_detection/pitch_detection.cpp.o:
 
 /usr/include/bits/types.h:
 
+/usr/include/SFML/Window/Window.hpp:
+
 /usr/include/c++/15/bits/streambuf_iterator.h:
 
 /usr/include/bits/libc-header-start.h:
@@ -1337,9 +1641,15 @@ CMakeFiles/main.dir/src/audio_pipeline/pitch_detection/pitch_detection.cpp.o:
 
 /usr/include/c++/15/bits/atomic_lockfree_defines.h:
 
+/usr/include/SFML/Window.hpp:
+
+/usr/include/SFML/System/FileInputStream.hpp:
+
 /usr/include/c++/15/bits/memory_resource.h:
 
 /usr/include/c++/15/bits/basic_ios.h:
+
+/usr/include/SFML/System/Thread.hpp:
 
 /usr/include/c++/15/bits/basic_ios.tcc:
 
@@ -1361,6 +1671,8 @@ CMakeFiles/main.dir/src/audio_pipeline/pitch_detection/pitch_detection.cpp.o:
 
 /usr/include/c++/15/bits/cxxabi_forced.h:
 
+/usr/include/c++/15/bits/stl_tree.h:
+
 /usr/include/bits/waitstatus.h:
 
 /usr/include/bits/wchar.h:
@@ -1372,6 +1684,8 @@ CMakeFiles/main.dir/src/audio_pipeline/pitch_detection/pitch_detection.cpp.o:
 /usr/include/c++/15/bits/stl_iterator_base_funcs.h:
 
 /usr/include/c++/15/ext/atomicity.h:
+
+/usr/lib64/libsfml-window.so.2.6.2:
 
 /usr/include/c++/15/initializer_list:
 
@@ -1399,7 +1713,13 @@ CMakeFiles/main.dir/src/audio_pipeline/pitch_detection/pitch_detection.cpp.o:
 
 /usr/include/c++/15/bits/functexcept.h:
 
+/usr/include/SFML/Graphics/RenderWindow.hpp:
+
 /usr/include/c++/15/bits/functional_hash.h:
+
+/usr/include/SFML/System/Vector2.inl:
+
+/usr/include/SFML/System/Thread.inl:
 
 /usr/include/c++/15/ext/type_traits.h:
 
@@ -1463,6 +1783,8 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/c++/15/bits/shared_ptr_atomic.h:
 
+/usr/include/c++/15/bits/stl_multimap.h:
+
 /usr/include/c++/15/bits/stl_uninitialized.h:
 
 /usr/include/c++/15/bits/shared_ptr_base.h:
@@ -1485,17 +1807,25 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/c++/15/clocale:
 
+/usr/include/SFML/Graphics/Image.hpp:
+
 /usr/include/c++/15/bits/stl_iterator.h:
 
 /usr/include/c++/15/memory:
+
+/usr/include/SFML/Graphics.hpp:
 
 /usr/include/c++/15/bits/ptr_traits.h:
 
 /usr/include/c++/15/bits/stl_construct.h:
 
+/usr/lib64/libbrotlidec.so.1:
+
 /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o:
 
 /usr/include/c++/15/bits/stl_iterator_base_types.h:
+
+/usr/include/SFML/Graphics/Glyph.hpp:
 
 /usr/include/c++/15/bits/stl_bvector.h:
 
@@ -1533,6 +1863,8 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/c++/15/ext/aligned_buffer.h:
 
+/usr/include/SFML/Graphics/CircleShape.hpp:
+
 /usr/include/c++/15/ext/alloc_traits.h:
 
 /usr/include/bits/floatn-common.h:
@@ -1562,6 +1894,10 @@ CMakeFiles/main.dir/src/main.cpp.o:
 /usr/include/linux/errno.h:
 
 /usr/include/c++/15/new:
+
+/usr/include/SFML/Graphics/View.hpp:
+
+/usr/include/SFML/Graphics/Transformable.hpp:
 
 /usr/include/strings.h:
 

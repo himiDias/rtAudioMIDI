@@ -4,10 +4,8 @@ Tool for converting a single instrument (current scope only planned for bass and
 
 ## Requirements
 
-As well as the libraries outlined in `requirements.txt`. The tool also requires PortAudio installed on the system.
-
-- Note, aubio installation issue, if building wheels failed for aubio.
-- visit https://aubio.org/manual/latest/installing.html
+- SFML
+- ALSA
 
 ### Linux
 

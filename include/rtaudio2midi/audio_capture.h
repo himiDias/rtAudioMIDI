@@ -16,7 +16,11 @@ namespace rtaudio2midi
         ~AudioCapture();
 
         bool start();
+
         bool isRunning();
+
+        size_t getNextChunk(float *output_arr, size_t num_frames);
+
         void stop();
 
     private:

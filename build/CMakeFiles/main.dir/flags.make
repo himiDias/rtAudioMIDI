@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -D__LINUX_ALSA__
 
-CXX_INCLUDES = -I/home/himidias/Documents/PP/Real-time-audio-to-MIDI/rtAudioMIDI/include
+CXX_INCLUDES = -I/home/himidias/Documents/PP/Real-time-audio-to-MIDI/rtAudioMIDI/include -I/home/himidias/Documents/PP/Real-time-audio-to-MIDI/rtAudioMIDI/include/rtaudio2midi
 
 CXX_FLAGS = -std=gnu++17
 

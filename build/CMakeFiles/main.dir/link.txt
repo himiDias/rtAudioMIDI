@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/main.dir/link.d CMakeFiles/main.dir/src/audio_pipeline/RtAudio.cpp.o CMakeFiles/main.dir/src/audio_pipeline/audio_input/audio_capture.cpp.o CMakeFiles/main.dir/src/audio_pipeline/pitch_detection/pitch_detection.cpp.o CMakeFiles/main.dir/src/main.cpp.o -o main  -lasound -lpthread

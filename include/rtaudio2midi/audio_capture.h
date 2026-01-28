@@ -1,52 +1,49 @@
 #ifndef AUDIO_CAPTURE_H
 #define AUDIO_CAPTURE_H
 
-
 #include "RtAudio.h"
 
 #include "CircularBuffer.h"
 
+namespace rtaudio2midi
+{
 
-namespace rtaudio2midi{
+    class AudioCapture
+    {
+    public:
+        AudioCapture(unsigned int sample_rate_p, unsigned int block_size_p, unsigned int channels_p);
 
-    class AudioCapture{
-        public:
-            AudioCapture(unsigned int sampleRate, unsigned int blockSize, unsigned int channels);
+        ~AudioCapture();
 
-            ~AudioCapture();
+        bool start();
+        bool isRunning();
+        void stop();
 
-            bool start();
-            bool isRunning();
-            void stop();
+    private:
+        RtAudio audio;
+        RtAudio::StreamParameters input_params;
 
-        private:
-            RtAudio audio;
-            RtAudio::StreamParameters inputParams;
+        unsigned int sample_rate;
+        unsigned int block_size;
+        unsigned int channels;
 
-            unsigned int sampleRate;
-            unsigned int blockSize;
-            unsigned int channels;
+        // State
+        std::atomic<bool> running{false};
 
-            // State
-            std::atomic<bool> running{false};
+        // Audio buffer
+        CircularBuffer<float> ring_buffer;
 
-            // Audio buffer
-            CircularBuffer<float> ringBuffer;
+        // Callback
+        static int audioCallback(
+            void *output_buffer,
+            void *input_buffer,
+            unsigned int n_frames,
+            double stream_time,
+            RtAudioStreamStatus status,
+            void *user_data);
 
-            // Callback
-            static int audioCallback(
-                void* outputBuffer,
-                void* inputBuffer,
-                unsigned int nFrames,
-                double streamTime,
-                RtAudioStreamStatus status,
-                void* userData
-            );
-
-            int processInput(void* inputBuffer, unsigned int nFrames);
-
+        int processInput(void *input_buffer, unsigned int n_frames);
     };
 }
-
 
 #endif

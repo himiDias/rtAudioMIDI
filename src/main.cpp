@@ -88,7 +88,7 @@ int main()
             wf_preprocessed_vis.update(plot_buf, FRAMES_PER_PLOT);
 
             // 0.01 threshold of when to detect pitch, increase if detecting pitch when slient
-
+            /*
             if (preprocess.RMSGate(plot_buf, plot_write, 0.005))
             {
                 if (change)
@@ -104,7 +104,7 @@ int main()
                     change = 1;
                     std::cout << "TOO QUIET/NOISE ONLY" << std::endl;
                 }
-            }
+            }*/
 
             plot_write = 0;
         }

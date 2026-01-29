@@ -13,3 +13,7 @@ Tool for converting a single instrument (current scope only planned for bass and
   - `sudo dnf install portaudio-devel alsa-lib-devel`
 
 Add rest later
+
+### Audio Capturing and Pre-processing
+
+![Preprocessing demo](assets/waveform-before-after.gif)

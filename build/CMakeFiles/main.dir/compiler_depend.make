@@ -588,6 +588,7 @@ CMakeFiles/main.dir/src/audio_pipeline/pitch_detection/pitch_detection.cpp.o: /h
 CMakeFiles/main.dir/src/main.cpp.o: /home/himidias/Documents/PP/Real-time-audio-to-MIDI/rtAudioMIDI/src/main.cpp \
   /home/himidias/Documents/PP/Real-time-audio-to-MIDI/rtAudioMIDI/include/RtAudio.h \
   /home/himidias/Documents/PP/Real-time-audio-to-MIDI/rtAudioMIDI/include/rtaudio2midi/CircularBuffer.h \
+  /home/himidias/Documents/PP/Real-time-audio-to-MIDI/rtAudioMIDI/include/rtaudio2midi/Preprocessor.h \
   /home/himidias/Documents/PP/Real-time-audio-to-MIDI/rtAudioMIDI/include/rtaudio2midi/audio_capture.h \
   /home/himidias/Documents/PP/Real-time-audio-to-MIDI/rtAudioMIDI/include/rtaudio2midi/waveform_visualiser.h \
   /usr/include/SFML/Config.hpp \
@@ -686,9 +687,19 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/himidias/Documents/PP/Real-time-audio-
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-macros.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
   /usr/include/bits/pthread_stack_min-dynamic.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
@@ -802,6 +813,7 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/himidias/Documents/PP/Real-time-audio-
   /usr/include/c++/15/bits/shared_ptr.h \
   /usr/include/c++/15/bits/shared_ptr_atomic.h \
   /usr/include/c++/15/bits/shared_ptr_base.h \
+  /usr/include/c++/15/bits/specfun.h \
   /usr/include/c++/15/bits/sstream.tcc \
   /usr/include/c++/15/bits/std_abs.h \
   /usr/include/c++/15/bits/std_function.h \
@@ -816,6 +828,7 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/himidias/Documents/PP/Real-time-audio-
   /usr/include/c++/15/bits/stl_iterator_base_types.h \
   /usr/include/c++/15/bits/stl_map.h \
   /usr/include/c++/15/bits/stl_multimap.h \
+  /usr/include/c++/15/bits/stl_numeric.h \
   /usr/include/c++/15/bits/stl_pair.h \
   /usr/include/c++/15/bits/stl_raw_storage_iter.h \
   /usr/include/c++/15/bits/stl_tempbuf.h \
@@ -838,6 +851,7 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/himidias/Documents/PP/Real-time-audio-
   /usr/include/c++/15/cctype \
   /usr/include/c++/15/cerrno \
   /usr/include/c++/15/clocale \
+  /usr/include/c++/15/cmath \
   /usr/include/c++/15/compare \
   /usr/include/c++/15/concepts \
   /usr/include/c++/15/cstddef \
@@ -865,14 +879,18 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/himidias/Documents/PP/Real-time-audio-
   /usr/include/c++/15/iostream \
   /usr/include/c++/15/istream \
   /usr/include/c++/15/iterator \
+  /usr/include/c++/15/limits \
   /usr/include/c++/15/locale \
   /usr/include/c++/15/map \
+  /usr/include/c++/15/math.h \
   /usr/include/c++/15/memory \
   /usr/include/c++/15/new \
+  /usr/include/c++/15/numeric \
   /usr/include/c++/15/ostream \
   /usr/include/c++/15/pstl/execution_defs.h \
   /usr/include/c++/15/pstl/glue_algorithm_defs.h \
   /usr/include/c++/15/pstl/glue_memory_defs.h \
+  /usr/include/c++/15/pstl/glue_numeric_defs.h \
   /usr/include/c++/15/pstl/pstl_config.h \
   /usr/include/c++/15/sstream \
   /usr/include/c++/15/stdexcept \
@@ -881,6 +899,18 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/himidias/Documents/PP/Real-time-audio-
   /usr/include/c++/15/string \
   /usr/include/c++/15/string_view \
   /usr/include/c++/15/system_error \
+  /usr/include/c++/15/tr1/bessel_function.tcc \
+  /usr/include/c++/15/tr1/beta_function.tcc \
+  /usr/include/c++/15/tr1/ell_integral.tcc \
+  /usr/include/c++/15/tr1/exp_integral.tcc \
+  /usr/include/c++/15/tr1/gamma.tcc \
+  /usr/include/c++/15/tr1/hypergeometric.tcc \
+  /usr/include/c++/15/tr1/legendre_function.tcc \
+  /usr/include/c++/15/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/15/tr1/poly_hermite.tcc \
+  /usr/include/c++/15/tr1/poly_laguerre.tcc \
+  /usr/include/c++/15/tr1/riemann_zeta.tcc \
+  /usr/include/c++/15/tr1/special_function_util.h \
   /usr/include/c++/15/tuple \
   /usr/include/c++/15/type_traits \
   /usr/include/c++/15/typeinfo \
@@ -913,6 +943,7 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/himidias/Documents/PP/Real-time-audio-
   /usr/include/linux/stddef.h \
   /usr/include/linux/types.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
@@ -1027,9 +1058,13 @@ CMakeFiles/main.dir/src/audio_pipeline/RtAudio.cpp.o:
 
 /lib64/ld-linux-x86-64.so.2:
 
+/usr/include/c++/15/math.h:
+
 /usr/include/c++/15/map:
 
 /usr/include/c++/15/iterator:
+
+/usr/include/c++/15/bits/stl_numeric.h:
 
 /usr/include/SFML/Window/WindowStyle.hpp:
 
@@ -1113,6 +1148,8 @@ CMakeFiles/main.dir/src/audio_pipeline/RtAudio.cpp.o:
 
 /home/himidias/Documents/PP/Real-time-audio-to-MIDI/rtAudioMIDI/include/rtaudio2midi/waveform_visualiser.h:
 
+/home/himidias/Documents/PP/Real-time-audio-to-MIDI/rtAudioMIDI/include/rtaudio2midi/Preprocessor.h:
+
 /home/himidias/Documents/PP/Real-time-audio-to-MIDI/rtAudioMIDI/src/audio_pipeline/pitch_detection/pitch_detection.cpp:
 
 /usr/include/c++/15/cstdint:
@@ -1144,6 +1181,8 @@ CMakeFiles/main.dir/src/audio_pipeline/RtAudio.cpp.o:
 /usr/lib64/libbrotlicommon.so.1:
 
 /usr/include/pthread.h:
+
+/usr/include/c++/15/numeric:
 
 /usr/include/poll.h:
 
@@ -1502,6 +1541,8 @@ CMakeFiles/main.dir/src/audio_pipeline/pitch_detection/pitch_detection.cpp.o:
 /usr/include/bits/types/struct_iovec.h:
 
 /usr/include/bits/types/__sigset_t.h:
+
+/usr/include/c++/15/pstl/glue_numeric_defs.h:
 
 /usr/include/bits/fp-logb.h:
 
